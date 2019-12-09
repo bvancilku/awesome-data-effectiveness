@@ -33,3 +33,8 @@ Have you designed systems so that errors in data are noted and can inform future
 ## Reproducibility
 
 Will anyone else be able to carry out your analysis in your absence?
+
+### R
+
+* [Drake](https://github.com/ropensci/drake) is a build system in R for data science projects. It ensures that you only have to run the steps that changed.
+* [renv](https://rstudio.github.io/renv/) provides local reproducible package environments for R similar to those that exist in other languages. Ensure that your colleagues or future you will be running the same versions of all your packages!
