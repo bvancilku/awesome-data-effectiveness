@@ -26,6 +26,21 @@ Does the layout of your data permit easy analysis? Sometimes the transformation 
 
 Do the visualizations communicate in a way that facilitates decisions?
 
+### Chart Choosers
+
+* [Qualitative Chart Chooser 3.0 by Jennier Lyons and Stephanie Evergreen](https://stephanieevergreen.com/qualitative-chart-chooser-3/)
+
+### Resources
+
+* [Data Visualization: A practical introduction by Kieran Healy](https://socviz.co/)
+* [Interactive Data-Visualization Checklist](https://stephanieevergreen.com/interactive-data-visualization-checklist/)
+* [The Dashboard Sketch Process](https://stephanieevergreen.com/the-dashboard-sketch-process/)
+
+### People to follow
+
+* [Ann K. Emery](https://depictdatastudio.com/) [@evergreendata on Twitter](https://twitter.com/evergreendata)
+* [Stephanie Evergreen](https://stephanieevergreen.com/) [@AnnKEmery on Twitter](https://twitter.com/AnnKEmery)
+
 ## Feedback
 
 Have you designed systems so that errors in data are noted and can inform future practice?
