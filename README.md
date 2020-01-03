@@ -30,6 +30,8 @@ Does the storage of your data permit its best use?
 
 * Style guide for variable naming
   * [names for variable conventions (Allison Horst)](https://twitter.com/allison_horst/status/1205702878544875521/photo/1)
+* CSV
+  * [Doing a database join with CSV files](https://www.johndcook.com/blog/2019/12/31/sql-join-csv-files/) using [xsv](https://github.com/BurntSushi/xsv)
 
 ## Transformation
 
