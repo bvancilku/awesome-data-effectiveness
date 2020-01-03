@@ -53,6 +53,7 @@ Do the visualizations communicate in a way that facilitates decisions?
 * [Interactive Data-Visualization Checklist](https://stephanieevergreen.com/interactive-data-visualization-checklist/)
 * [The Dashboard Sketch Process](https://stephanieevergreen.com/the-dashboard-sketch-process/)
 * [Four Ways to Show Projections](https://stephanieevergreen.com/four-ways-to-show-projections/)
+* [Junk Charts Trifecta Checkup](https://junkcharts.typepad.com/junk_charts/junk-charts-trifecta-checkup-the-definitive-guide.html)
 
 ### People to follow
 
