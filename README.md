@@ -28,6 +28,9 @@ What additional information does one need to make sense of your data? How can it
 
 Does the storage of your data permit its best use?
 
+* Style guide for variable naming
+  * [names for variable conventions (Allison Horst)](https://twitter.com/allison_horst/status/1205702878544875521/photo/1)
+
 ## Transformation
 
 Does the layout of your data permit easy analysis? Sometimes the transformation of the data will depend on the specific purpose. Can your data be transformed readily?
@@ -49,6 +52,7 @@ Do the visualizations communicate in a way that facilitates decisions?
 * [Data Visualization: A practical introduction by Kieran Healy](https://socviz.co/)
 * [Interactive Data-Visualization Checklist](https://stephanieevergreen.com/interactive-data-visualization-checklist/)
 * [The Dashboard Sketch Process](https://stephanieevergreen.com/the-dashboard-sketch-process/)
+* [Four Ways to Show Projections](https://stephanieevergreen.com/four-ways-to-show-projections/)
 
 ### People to follow
 
