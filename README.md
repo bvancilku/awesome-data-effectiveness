@@ -2,6 +2,8 @@
 
 Communicating your data for maximum effect
 
+* Wilson, G., Bryan, J., Cranston, K., Kitzes, J., Nederbragt, L., & Teal, T. K. (2017). Good enough practices in scientific computing. PLOS Computational Biology, 13(6), e1005510. https://doi.org/10.1371/journal.pcbi.1005510
+
 ## Purpose
 
 Why are your collecting the data? What decisions do you want to make based on the data?
@@ -28,6 +30,7 @@ What additional information does one need to make sense of your data? How can it
 
 Does the storage of your data permit its best use?
 
+* Broman, K. W., & Woo, K. H. (2018). Data Organization in Spreadsheets. The American Statistician, 72(1), 2–10. https://doi.org/10.1080/00031305.2017.1375989
 * Style guide for variable naming
   * [names for variable conventions (Allison Horst)](https://twitter.com/allison_horst/status/1205702878544875521/photo/1)
 * CSV
