@@ -3,7 +3,6 @@
 Communicating your data for maximum effect
 
 * [Poster from 2019-01-10 presentation](poster/awesome-data-effectiveness-poster.pdf)
-* Wilson, G., Bryan, J., Cranston, K., Kitzes, J., Nederbragt, L., & Teal, T. K. (2017). Good enough practices in scientific computing. PLOS Computational Biology, 13(6), e1005510. https://doi.org/10.1371/journal.pcbi.1005510
 
 ## Purpose
 
@@ -78,6 +77,9 @@ Have you designed systems so that errors in data are noted and can inform future
 ## Reproducibility
 
 Will anyone else be able to carry out your analysis in your absence?
+
+* Wilson, G., Bryan, J., Cranston, K., Kitzes, J., Nederbragt, L., & Teal, T. K. (2017). Good enough practices in scientific computing. PLOS Computational Biology, 13(6), e1005510. https://doi.org/10.1371/journal.pcbi.1005510
+* Stodden, V., & Miguez, S. (2014). Best Practices for Computational Science: Software Infrastructure and Environments for Reproducible and Extensible Research. Journal of Open Research Software, 2(1), e21. https://doi.org/10.5334/jors.ay
 
 ### Resources
 
