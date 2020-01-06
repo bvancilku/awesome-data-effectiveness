@@ -56,6 +56,11 @@ Do the visualizations communicate in a way that facilitates decisions?
 * [The Dashboard Sketch Process](https://stephanieevergreen.com/the-dashboard-sketch-process/)
 * [Four Ways to Show Projections](https://stephanieevergreen.com/four-ways-to-show-projections/)
 * [Junk Charts Trifecta Checkup](https://junkcharts.typepad.com/junk_charts/junk-charts-trifecta-checkup-the-definitive-guide.html)
+* #betterposter
+  * [Better Scientific Poster](https://osf.io/ef53g/) &mdash; templates in PowerPoint and InDesign
+  * LaTeX
+    * https://github.com/rafaelbailo/betterposter-latex-template
+    * https://github.com/LanaSina/better_poster_latex
 
 ### People to follow
 
