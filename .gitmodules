@@ -1,6 +1,3 @@
-[submodule "betterposter-latex-template"]
-	path = poster/betterposter-latex-template
-	url = https://github.com/rafaelbailo/betterposter-latex-template
 [submodule "poster/betterposter-latex-template"]
 	path = poster/betterposter-latex-template
 	url = https://github.com/rafaelbailo/betterposter-latex-template
