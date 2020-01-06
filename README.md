@@ -2,6 +2,7 @@
 
 Communicating your data for maximum effect
 
+* [Poster from 2019-01-10 presentation](poster/awesome-data-effectiveness-poster.pdf)
 * Wilson, G., Bryan, J., Cranston, K., Kitzes, J., Nederbragt, L., & Teal, T. K. (2017). Good enough practices in scientific computing. PLOS Computational Biology, 13(6), e1005510. https://doi.org/10.1371/journal.pcbi.1005510
 
 ## Purpose
