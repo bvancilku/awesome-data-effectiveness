@@ -1,6 +1,10 @@
 # Awesome Data Effectiveness
 
-Communicating your data for maximum effect
+Communicating your data for the desired effect
+
+Do you struggle with analyzing and communicating data to effect the changes you would like to see in the world? Do you have any approaches that work particularly well for your projects?
+
+Welcome to a world in which other data professionals care about improving practice as much as you do! We invite you to join in a conversation and collective data collection experience about which data practices aid in maximizing effectiveness. _¡Vivan los datos efectivos!_
 
 * [Poster from 2019-01-10 presentation](poster/awesome-data-effectiveness-poster.pdf)
 
