@@ -32,7 +32,7 @@ What additional information does one need to make sense of your data? How can it
 
 ## Storage
 
-REMOVE THIS LINE
+REMOVE THIS LINE, now really REMOVE THIS LINE
 
 Does the storage of your data permit its best use?
 
