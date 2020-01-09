@@ -37,6 +37,10 @@ REMOVE THIS LINE, now really REMOVE THIS LINE. Did you remove this line?
 Does the storage of your data permit its best use?
 
 * Broman, K. W., & Woo, K. H. (2018). Data Organization in Spreadsheets. The American Statistician, 72(1), 2–10. https://doi.org/10.1080/00031305.2017.1375989
+    * Think you know Excel? How many of these do you do? For instance:
+        * Do you ever classify rows using color?
+        * Do you ever include more than one table per sheet?
+        * Do you include long column names with spaces and lots of clarifying details?
 * Style guide for variable naming
   * [names for variable conventions (Allison Horst)](https://twitter.com/allison_horst/status/1205702878544875521/photo/1)
 * CSV
@@ -45,6 +49,8 @@ Does the storage of your data permit its best use?
 ## Transformation
 
 Does the layout of your data permit easy analysis? Sometimes the transformation of the data will depend on the specific purpose. Can your data be transformed readily?
+
+Often, storing related data in separate tables and joining them when necessary works better than storing one big table with many rows of duplicate information. How can you find a tool that supports easy data joining?
 
 ### Data quality and missing data
 
