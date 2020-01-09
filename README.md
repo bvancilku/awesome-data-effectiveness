@@ -8,17 +8,23 @@ Welcome to a world in which other data professionals care about improving practi
 
 * [Poster from 2019-01-10 presentation](poster/awesome-data-effectiveness-poster.pdf)
 
-## Purpose
+## Purpose / Planning (Discuss)
 
 Why are your collecting the data? What decisions do you want to make based on the data?
+
+### Advice
 
 ### Resources
 
 ## Collection
 
-How can you design data collection to align with your purpose?
+How can you design data collection to align with your purpose and ease analysis?
+
+### Advice
 
 ### Resources
+
+* Data Stories podcast about how to design survey questions (BV enter)
 
 ### Data types
 
@@ -28,17 +34,31 @@ How can you design data collection to align with your purpose?
 
 What additional information does one need to make sense of your data? How can it be used effectively?
 
+### Advice
+
 ### Resources
 
-## Storage
+## Storage (Discussion)
 
 Does the storage of your data permit its best use?
 
+### Advice
+
+1. Use spreadsheets effectively. See Broman & Woo, 2018.
+    1. Use the correct format and data types (e.g. dates should use ISO 8601 standard, are the numbers integers or floating point numbers) for each variable. If you don't know about data types, ask.
+    1. Never merge cells.
+    1. Do not rely on color or formatting to store information.
+    1. Put each table on a different, named sheet.
+    1. Put units or notes or additional information in another column. Don't pack more than one piece of information in a single cell.
+    1. Always start in the top-left cell of each sheet.
+    1. Keep column (variable) names short and unique with no spaces.
+    1. If opening a CSV with special characters as an Excel spreadsheet, import the text rather than opening the file to preserve text encoding. If you don't know what this means, ask.
+    1. Learn about tidy data shapes.
+1. Think about data security. Does your data include PHI, PII, or other sensitive elements? Talk to your IT team.
+
+### Resources
+
 * Broman, K. W., & Woo, K. H. (2018). Data Organization in Spreadsheets. The American Statistician, 72(1), 2–10. https://doi.org/10.1080/00031305.2017.1375989
-    * Think you know Excel? How many of these do you do? For instance:
-        * Do you ever classify rows using color?
-        * Do you ever include more than one table per sheet?
-        * Do you include long column names with spaces and lots of clarifying details?
 * Style guide for variable naming
   * [names for variable conventions (Allison Horst)](https://twitter.com/allison_horst/status/1205702878544875521/photo/1)
 * CSV
@@ -48,15 +68,19 @@ Does the storage of your data permit its best use?
 
 Does the layout of your data permit easy analysis? Sometimes the transformation of the data will depend on the specific purpose. Can your data be transformed readily?
 
+### Advice
+
 Often, storing related data in separate tables and joining them when necessary works better than storing one big table with many rows of duplicate information. How can you find a tool that supports easy data joining?
 
-### Data quality and missing data
+Data quality and missing data
 
 ### Resources
 
 ## Communication and visualization
 
 Do the visualizations communicate in a way that facilitates decisions?
+
+### Advice
 
 ### Chart Choosers
 
