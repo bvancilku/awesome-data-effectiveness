@@ -32,8 +32,6 @@ What additional information does one need to make sense of your data? How can it
 
 ## Storage
 
-REMOVE THIS LINE, now really REMOVE THIS LINE
-
 Does the storage of your data permit its best use?
 
 * Broman, K. W., & Woo, K. H. (2018). Data Organization in Spreadsheets. The American Statistician, 72(1), 2–10. https://doi.org/10.1080/00031305.2017.1375989
