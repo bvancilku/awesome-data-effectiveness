@@ -50,6 +50,8 @@ Does the storage of your data permit its best use?
 
 Does the layout of your data permit easy analysis? Sometimes the transformation of the data will depend on the specific purpose. Can your data be transformed readily?
 
+Often, storing related data in separate tables and joining them when necessary works better than storing one big table with many rows of duplicate information. How can you find a tool that supports easy data joining?
+
 ### Data quality and missing data
 
 ### Resources
