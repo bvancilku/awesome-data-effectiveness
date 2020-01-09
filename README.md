@@ -32,6 +32,12 @@ How can you design data collection to align with your purpose and ease analysis?
 
 ### Advice
 
+1. Survey Creation
+    1. Plan/think about how you will analyze the data from each question as you create them.
+    1. Use data validation on user-input questions to regulate what kind of data is collected.
+    1. Remember that what you are able to analyze later depends of what you collect. If you collect detailed information, you can always group answers together later, but if you ask for only broad data, you cannot break that into more detailed options afterward.
+    1. Think about what data type is best for each question from the beginning (numeric vs text vs date, etc.)
+
 ### Resources
 
 * Data Stories podcast about how to design survey questions (BV enter)
@@ -67,7 +73,10 @@ Does the storage of your data permit its best use?
 1. Think about data security. Does your data include PHI, PII, or other sensitive elements? Talk to your IT team.
 1. Data types
 	1. Use the correct format and data types (e.g. dates should use ISO 8601 standard, are the numbers integers or floating point numbers) for each variable. If you don't know about data types, ask.
-
+1. File Organization / Data Flow Management
+    1. Especially for reports that will happen again, clearly organize and label all files and folders. One way is to use prefixes in front of the names and folders to keep them in a logical order (e.g. "01 original data", "02 edited data", "03 final report").
+    1. Never edit the original data: keep a the original data clearly marked in one location, and make a copy of the original data to be edited.
+    1. Keep track of changes made to the original data so your efforts can be reproduced. See Section "Reproducibility" below.
 
 https://www.grow.com/blog/the-cost-of-poor-data-quality-and-how-to-avoid-it
 ### Resources
@@ -88,7 +97,7 @@ Does the layout of your data permit easy analysis? Sometimes the transformation 
 
 ### Advice
 
-Often, storing related data in separate tables and joining them when necessary works better than storing one big table with many rows of duplicate information. How can you find a tool that supports easy data joining?
+1. Often, storing related data in separate tables and joining them when necessary works better than storing one big table with many rows of duplicate information. How can you find a tool that supports easy data joining?
 
 Data quality and missing data
 
@@ -99,6 +108,8 @@ Data quality and missing data
 Do the visualizations communicate in a way that facilitates decisions?
 
 ### Advice
+
+1. 
 
 ### Resources
 
@@ -126,7 +137,7 @@ Do the visualizations communicate in a way that facilitates decisions?
 
 ### Advice
 
-Have you designed systems so that errors in data are noted and can inform future practice?
+1. Have you designed systems so that errors in data are noted and can inform future practice?
 
 ### Resources
 
@@ -143,7 +154,8 @@ Can your public results be followed so that some other institutions can perform 
 1. Document your work as you go! 
 	1. Use the standard of 'can someone else re-perform these tasks based on what is written here?' In 3 months, you might be that 'someone else' in 3 months.
 	1. Refrain from using too many acronyms and buzzwords that are difficult for others to follow.
-1. 
+1. Never edit the original data: keep a the original data clearly marked in one location, and make a copy of the original data to be edited.
+1. Keep track of changes made to the original data so your efforts can be reproduced. For example, use code/syntax and/or keep detailed notes. If editing data in Excel, you can create a copy of the tab/sheet after each major set of changes to the data -- you would end of with lots of little tabs acting like "save points".
 
 
 ### Resources
