@@ -80,6 +80,7 @@ Do the visualizations communicate in a way that facilitates decisions?
 
 Have you designed systems so that errors in data are noted and can inform future practice?
 
+
 ## Reproducibility
 
 Will anyone else be able to carry out your analysis in your absence?
