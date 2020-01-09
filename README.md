@@ -8,7 +8,7 @@ Welcome to a world in which other data professionals care about improving practi
 
 * [Poster from 2019-01-10 presentation](poster/awesome-data-effectiveness-poster.pdf)
 
-## Purpose / Planning (Discuss)
+## Purpose and planning (Discuss)
 
 Why are your collecting the data? What decisions do you want to make based on the data?
 
@@ -48,7 +48,7 @@ What additional information does one need to make sense of your data? How can it
 
 ### Resources
 
-## Storage and Data Quality (Discussion)
+## Storage and data quality (Discussion)
 
 Does the storage of your data permit its best use?
 
@@ -130,7 +130,8 @@ Have you designed systems so that errors in data are noted and can inform future
 
 ### Resources
 
-## Reproducibility
+## Reproducibility (Discussion)
+
 Will anyone else be able to carry out your analysis in your absence? Will you be able to carry out your own analysis again in 3 months? 3 years?
 
 “non-reproducible single occurrences are of no significance to science” - Karl Popper
@@ -138,6 +139,7 @@ Can your public results be followed so that some other institutions can perform 
 
 
 ### Advice
+
 1. Document your work as you go! 
 	1. Use the standard of 'can someone else re-perform these tasks based on what is written here?' In 3 months, you might be that 'someone else' in 3 months.
 	1. Refrain from using too many acronyms and buzzwords that are difficult for others to follow.
