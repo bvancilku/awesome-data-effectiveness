@@ -94,33 +94,33 @@ Data quality and missing data
 
 ### Resources
 
-## Communication and visualization
+## Communication and visualization (Discussion)
 
 Do the visualizations communicate in a way that facilitates decisions?
 
 ### Advice
 
-### Chart Choosers
-
-* [Qualitative Chart Chooser 3.0 by Jennier Lyons and Stephanie Evergreen](https://stephanieevergreen.com/qualitative-chart-chooser-3/)
-
 ### Resources
 
-* [Data Visualization: A practical introduction by Kieran Healy](https://socviz.co/)
-* [Interactive Data-Visualization Checklist](https://stephanieevergreen.com/interactive-data-visualization-checklist/)
-* [The Dashboard Sketch Process](https://stephanieevergreen.com/the-dashboard-sketch-process/)
-* [Four Ways to Show Projections](https://stephanieevergreen.com/four-ways-to-show-projections/)
-* [Junk Charts Trifecta Checkup](https://junkcharts.typepad.com/junk_charts/junk-charts-trifecta-checkup-the-definitive-guide.html)
-* #betterposter
-  * [Better Scientific Poster](https://osf.io/ef53g/) &mdash; templates in PowerPoint and InDesign
-  * LaTeX
-    * https://github.com/rafaelbailo/betterposter-latex-template
-    * https://github.com/LanaSina/better_poster_latex
-
-### People to follow
-
-* [Ann K. Emery](https://depictdatastudio.com/) [@evergreendata on Twitter](https://twitter.com/evergreendata)
-* [Stephanie Evergreen](https://stephanieevergreen.com/) [@AnnKEmery on Twitter](https://twitter.com/AnnKEmery)
+* Books
+    * [Data Visualization: A practical introduction by Kieran Healy](https://socviz.co/)
+* Chart choosers
+    * [Qualitative Chart Chooser 3.0 by Jennier Lyons and Stephanie Evergreen](https://stephanieevergreen.com/qualitative-chart-chooser-3/)
+* Checklists and frameworks
+    * [Interactive Data-Visualization Checklist](https://stephanieevergreen.com/interactive-data-visualization-checklist/)
+    * [Junk Charts Trifecta Checkup](https://junkcharts.typepad.com/junk_charts/junk-charts-trifecta-checkup-the-definitive-guide.html)
+* People to follow
+    * [Ann K. Emery](https://depictdatastudio.com/) [@evergreendata on Twitter](https://twitter.com/evergreendata)
+    * [Stephanie Evergreen](https://stephanieevergreen.com/) [@AnnKEmery on Twitter](https://twitter.com/AnnKEmery)
+* Processes
+    * [The Dashboard Sketch Process](https://stephanieevergreen.com/the-dashboard-sketch-process/)
+* Visualization help
+    * [Four Ways to Show Projections](https://stephanieevergreen.com/four-ways-to-show-projections/)
+    * #betterposter
+        * [Better Scientific Poster](https://osf.io/ef53g/) &mdash; templates in PowerPoint and InDesign
+        * LaTeX
+            * <https://github.com/rafaelbailo/betterposter-latex-template>
+            * <https://github.com/LanaSina/better_poster_latex>
 
 ## Feedback
 
