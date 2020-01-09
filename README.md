@@ -106,18 +106,26 @@ Do the visualizations communicate in a way that facilitates decisions?
 
 ## Feedback
 
+### Advice
+
 Have you designed systems so that errors in data are noted and can inform future practice?
+
+### Resources
 
 ## Reproducibility
 
 Will anyone else be able to carry out your analysis in your absence? Will you be able to carry out your own analysis again in 3 months? 3 years?
 
-* Wilson, G., Bryan, J., Cranston, K., Kitzes, J., Nederbragt, L., & Teal, T. K. (2017). Good enough practices in scientific computing. PLOS Computational Biology, 13(6), e1005510. https://doi.org/10.1371/journal.pcbi.1005510
-* Stodden, V., & Miguez, S. (2014). Best Practices for Computational Science: Software Infrastructure and Environments for Reproducible and Extensible Research. Journal of Open Research Software, 2(1), e21. https://doi.org/10.5334/jors.ay
+### Advice
 
 ### Resources
 
-### R
+* Wilson, G., Bryan, J., Cranston, K., Kitzes, J., Nederbragt, L., & Teal, T. K. (2017). Good enough practices in scientific computing. PLOS Computational Biology, 13(6), e1005510. https://doi.org/10.1371/journal.pcbi.1005510
+* Stodden, V., & Miguez, S. (2014). Best Practices for Computational Science: Software Infrastructure and Environments for Reproducible and Extensible Research. Journal of Open Research Software, 2(1), e21. https://doi.org/10.5334/jors.ay
+
+#### Python Resources
+
+#### R Resources
 
 * [Drake](https://github.com/ropensci/drake) is a build system in R for data science projects. It ensures that you only have to run the steps that changed.
 * [renv](https://rstudio.github.io/renv/) provides local reproducible package environments for R similar to those that exist in other languages. Ensure that your colleagues or future you will be running the same versions of all your packages!
