@@ -13,6 +13,16 @@ Welcome to a world in which other data professionals care about improving practi
 Why are your collecting the data? What decisions do you want to make based on the data?
 
 ### Advice
+1. Think about a question you're intersted in, try and frame this as best as you can about the intended outcomes and impacts.
+1. Formulate a clear hypothesis
+	1. This is the one question you want to address with your data, anything else is gravy (or to be reformulated into a new hypothesis).
+1. Predict an outcome
+	1. This step is important, all statistical results can do is give you an 'idea' of how true or false your prediction is. They do not provide an absolute truth.
+	1. Try and distinguish what you're looking for from other possible influences (and corresponding data models). To expand, if there are two hypotheses with the same predictions, then observing that prediction will validate both hypotheses.	
+1. Test your hypothesis
+	1. You may already have the data! (If not, you'll need to collect the data - and this beyond the scope of this document).
+1. analysis...
+	
 
 ### Resources
 
@@ -38,7 +48,7 @@ What additional information does one need to make sense of your data? How can it
 
 ### Resources
 
-## Storage (Discussion)
+## Storage and Data Quality (Discussion)
 
 Does the storage of your data permit its best use?
 
@@ -55,14 +65,22 @@ Does the storage of your data permit its best use?
     1. If opening a CSV with special characters as an Excel spreadsheet, import the text rather than opening the file to preserve text encoding. If you don't know what this means, ask.
     1. Learn about tidy data shapes.
 1. Think about data security. Does your data include PHI, PII, or other sensitive elements? Talk to your IT team.
+1. Data types
+	1. Use the correct format and data types (e.g. dates should use ISO 8601 standard, are the numbers integers or floating point numbers) for each variable. If you don't know about data types, ask.
 
+
+https://www.grow.com/blog/the-cost-of-poor-data-quality-and-how-to-avoid-it
 ### Resources
 
 * Broman, K. W., & Woo, K. H. (2018). Data Organization in Spreadsheets. The American Statistician, 72(1), 2–10. https://doi.org/10.1080/00031305.2017.1375989
+* [Condensed information about spreadsheet don'ts (and do's)](https://lgatto.github.io/spreadsheet-ecology-lesson/00-intro.html)
 * Style guide for variable naming
   * [names for variable conventions (Allison Horst)](https://twitter.com/allison_horst/status/1205702878544875521/photo/1)
 * CSV
   * [Doing a database join with CSV files](https://www.johndcook.com/blog/2019/12/31/sql-join-csv-files/) using [xsv](https://github.com/BurntSushi/xsv)
+* Data Quality tips
+  * [Qualities of 'good' data, and problems caused with 'bad' data'](https://www.grow.com/blog/the-cost-of-poor-data-quality-and-how-to-avoid-it)
+  * [Monetary focused costs of 'bad' data](https://www.habiledata.com/blog/5-data-entry-errors-companies-should-avoid-to-improve-accuracy/)
 
 ## Transformation
 
@@ -113,10 +131,18 @@ Have you designed systems so that errors in data are noted and can inform future
 ### Resources
 
 ## Reproducibility
-
 Will anyone else be able to carry out your analysis in your absence? Will you be able to carry out your own analysis again in 3 months? 3 years?
 
+“non-reproducible single occurrences are of no significance to science” - Karl Popper
+Can your public results be followed so that some other institutions can perform the same analysis?
+
+
 ### Advice
+1. Document your work as you go! 
+	1. Use the standard of 'can someone else re-perform these tasks based on what is written here?' In 3 months, you might be that 'someone else' in 3 months.
+	1. Refrain from using too many acronyms and buzzwords that are difficult for others to follow.
+1. 
+
 
 ### Resources
 
