@@ -8,7 +8,7 @@ Welcome to a world in which other data professionals care about improving practi
 
 * [Poster from 2019-01-10 presentation](poster/awesome-data-effectiveness-poster.pdf)
 
-## Purpose and planning (Discuss)
+## Project management (Discuss)
 
 Why are your collecting the data? What decisions do you want to make based on the data? It's best practice to define a question and search for solutions, as opposed to being given a large set of data to explore for intersting queries.
 
@@ -29,10 +29,21 @@ Below is an outline of the 'scientific method', the approach that should be take
 	1. Does your hypothesis align with results, or are results more consistent with the NULL hypothesis?
 	1. Significance is only relevant with regard to the NULL hypothesis
 	1. Attempt to quantify the uncertainty within the claimed results
-	
+1. Consider adopting an iterative process model for data projects.
 
 ### Resources
 
+* Overall project management
+    * Wilson, G., Bryan, J., Cranston, K., Kitzes, J., Nederbragt, L., & Teal, T. K. (2017). Good enough practices in scientific computing. PLOS Computational Biology, 13(6), e1005510. https://doi.org/10.1371/journal.pcbi.1005510
+        * This article is worth its printed mass in antimatter!
+* Data science process models &mdash; The process will differ depending on how you intend to publish your results. For instance, if you intend to productionize your results as part of an application, there will be more steps.
+    * [OSEMN framework](https://towardsdatascience.com/5-steps-of-a-data-science-project-lifecycle-26c50372b492)
+    * [Team Data Science Process (TDSP) (Microsoft)](https://docs.microsoft.com/en-us/azure/machine-learning/team-data-science-process/overview)
+    * [Another process from datasciencegraduateprograms.com](https://www.datasciencegraduateprograms.com/the-data-science-process/)
+    * [Cross-industry standard process for data mining (CRISP-DM)](https://en.wikipedia.org/wiki/Cross-industry_standard_process_for_data_mining)
+    * [Defining success - Four secrets of a successful data science experiment](https://simplystatistics.org/2016/06/03/defining-success/) by Roger Peng
+        * Defining success is a crucial aspect of any data science process. Essentially, you define the outcome you want and work backwards.
+    * [OSEMN is Awesome, but AOSEMN is Awesomer](https://datasciencemvp.com/articles/2019/04/16/aosemn/)
 * [Synopsis of scientific method](https://www.thoughtco.com/steps-of-the-scientific-method-p2-606045)
 
 
