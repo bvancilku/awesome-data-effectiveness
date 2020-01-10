@@ -18,18 +18,22 @@ Below is an outline of the 'scientific method', the approach that should be take
 1. Formulate a clear hypothesis
 	1. This is the one question you want to address with your data, anything else is gravy (or to be reformulated into a new hypothesis).
 	1. Understand what the NULL hypothesis means, that's the state of affairs if your predicted hypothesis is not true. 
-1. Predict an outcome
+1. Predict a testable outcome
 	1. This step is important, all statistical results can do is give you an 'idea' of how true or false your prediction is. They do not provide an absolute truth.
 	1. Try and distinguish what you're looking for from other possible influences (and corresponding data models). To expand, if there are two hypotheses with the same predictions, then observing that prediction will validate both hypotheses.	
-1. Test your hypothesis
+1. Test your hypothesis using some analysis
 	1. You may already have the data! (If not, you'll need to collect the data - and this beyond the scope of this document).
 	1. Apply and tune the relevant fitting procedure or machine learning algorithm.
-1. Analysis
+	1. This is the step most people think of when referring to anything 'data related'. In practice it's likely a short step, post data cleaning etc. Validation of results and quantifying uncertainties may (should?) take a longer amount of time.
+1. Results
 	1. Does your hypothesis align with results, or are results more consistent with the NULL hypothesis?
 	1. Significance is only relevant with regard to the NULL hypothesis
+	1. Attempt to quantify the uncertainty within the claimed results
 	
 
 ### Resources
+
+* [Synopsis of scientific method](https://www.thoughtco.com/steps-of-the-scientific-method-p2-606045)
 
 ## Collection
 
@@ -49,7 +53,25 @@ How can you design data collection to align with your purpose and ease analysis?
 
 ### Data types
 
+Depending on the software tools used for analysis, there are multiple available data types. For the most part these tend to be divided into:
+* Numerical values
+1. To provide more detail, numerical values can represent integers or floating point values. 
+	1. An integer is a whole number, for example 'age in years'. We'd expect to see a response given in a number without decimal places. Take someone who is 35 years old, the response expected is '35'.
+	1. Alternatively, floating points allow decimal places (to some precision). If we're considering a continuous variables, such as a precise value of age, this can be represented in seconds arbitrary precision.
+		1. As an example, a 35 year old may respond to age as 1.104e+9 seconds. Depending on what specific type is used to represent this, and the available computer memory, this could be 1.1045358974e+9 seconds.
+* Strings or text
+	1. This is useful for fields that represent values such as name.
+	1. It's detrmiental to store fields that should be numeric as a string.
+		1. In particular, it's especially irritating if age were represented as string. In this case we could end up with responses along the lines of '35', '35 years', '1.104e+9', making the consolidation of all responses difficult.
+* Boolean values
+	1. Represent values that only have a true or false value. 
+	1. An example could be, 'are you 35 years old, or older?'. Following from our age example, in such a case for a 35 year old we'd store a response of 'true'. Note the explicit representation depends on the programming language used, but regardless it will be one of two possible values.
+	
+
 ### Data validation and quality
+
+Defining data types will spot immediate problems with data validation. If someone responds '35 years' to an age field that should be numeric, this will illicit an error as the string 'years' is not interpretable as a numerical value. Such validation (and addressing of said erroneous data) is necessary for any analysis.
+Despite such checks, we can also have responses to an age field such as '45448752'. While this is a numeric value, it is obviously not a valid response to the question of age. This is now a data quality issue. Data quality issues may be difficult to find by glancing at data, but by visulizing the responses we can spot outliers that are non sensical. For example, by plotting the age variable as a histogram (a frequency count of responses), we'd spot an erroneous response as being many standard deviations from the mean value of age.
 
 ## Metadata
 
