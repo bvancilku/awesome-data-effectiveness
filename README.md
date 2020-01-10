@@ -10,18 +10,25 @@ Welcome to a world in which other data professionals care about improving practi
 
 ## Project management (Discuss)
 
-Why are your collecting the data? What decisions do you want to make based on the data?
+Why are your collecting the data? What decisions do you want to make based on the data? It's best practice to define a question and search for solutions, as opposed to being given a large set of data to explore for intersting queries.
 
 ### Advice
+Below is an outline of the 'scientific method', the approach that should be taken when testing a theory.
 1. Think about a question you're intersted in, try and frame this as best as you can about the intended outcomes and impacts.
 1. Formulate a clear hypothesis
 	1. This is the one question you want to address with your data, anything else is gravy (or to be reformulated into a new hypothesis).
-1. Predict an outcome
+	1. Understand what the NULL hypothesis means, that's the state of affairs if your predicted hypothesis is not true. 
+1. Predict a testable outcome
 	1. This step is important, all statistical results can do is give you an 'idea' of how true or false your prediction is. They do not provide an absolute truth.
 	1. Try and distinguish what you're looking for from other possible influences (and corresponding data models). To expand, if there are two hypotheses with the same predictions, then observing that prediction will validate both hypotheses.	
-1. Test your hypothesis
+1. Test your hypothesis using some analysis
 	1. You may already have the data! (If not, you'll need to collect the data - and this beyond the scope of this document).
-1. analysis...
+	1. Apply and tune the relevant fitting procedure or machine learning algorithm.
+	1. This is the step most people think of when referring to anything 'data related'. In practice it's likely a short step, post data cleaning etc. Validation of results and quantifying uncertainties may (should?) take a longer amount of time.
+1. Results
+	1. Does your hypothesis align with results, or are results more consistent with the NULL hypothesis?
+	1. Significance is only relevant with regard to the NULL hypothesis
+	1. Attempt to quantify the uncertainty within the claimed results
 1. Consider adopting an iterative process model for data projects.
 
 ### Resources
@@ -37,6 +44,7 @@ Why are your collecting the data? What decisions do you want to make based on th
     * [Defining success - Four secrets of a successful data science experiment](https://simplystatistics.org/2016/06/03/defining-success/) by Roger Peng
         * Defining success is a crucial aspect of any data science process. Essentially, you define the outcome you want and work backwards.
     * [OSEMN is Awesome, but AOSEMN is Awesomer](https://datasciencemvp.com/articles/2019/04/16/aosemn/)
+* [Synopsis of scientific method](https://www.thoughtco.com/steps-of-the-scientific-method-p2-606045)
 
 ## Collection
 
@@ -56,13 +64,33 @@ How can you design data collection to align with your purpose and ease analysis?
 
 ### Data types
 
+Depending on the software tools used for analysis, there are multiple available data types. For the most part these tend to be divided into:
+* Numerical values
+1. To provide more detail, numerical values can represent integers or floating point values. 
+	1. An integer is a whole number, for example 'age in years'. We'd expect to see a response given in a number without decimal places. Take someone who is 35 years old, the response expected is '35'.
+	1. Alternatively, floating points allow decimal places (to some precision). If we're considering a continuous variables, such as a precise value of age, this can be represented in seconds arbitrary precision.
+		1. As an example, a 35 year old may respond to age as 1.104e+9 seconds. Depending on what specific type is used to represent this, and the available computer memory, this could be 1.1045358974e+9 seconds.
+* Strings or text
+	1. This is useful for fields that represent values such as name.
+	1. It's detrmiental to store fields that should be numeric as a string.
+		1. In particular, it's especially irritating if age were represented as string. In this case we could end up with responses along the lines of '35', '35 years', '1.104e+9', making the consolidation of all responses difficult.
+* Boolean values
+	1. Represent values that only have a true or false value. 
+	1. An example could be, 'are you 35 years old, or older?'. Following from our age example, in such a case for a 35 year old we'd store a response of 'true'. Note the explicit representation depends on the programming language used, but regardless it will be one of two possible values.
+	
+
 ### Data validation and quality
+
+Defining data types will spot immediate problems with data validation. If someone responds '35 years' to an age field that should be numeric, this will illicit an error as the string 'years' is not interpretable as a numerical value. Such validation (and addressing of said erroneous data) is necessary for any analysis.
+Despite such checks, we can also have responses to an age field such as '45448752'. While this is a numeric value, it is obviously not a valid response to the question of age. This is now a data quality issue. Data quality issues may be difficult to find by glancing at data, but by visulizing the responses we can spot outliers that are non sensical. For example, by plotting the age variable as a histogram (a frequency count of responses), we'd spot an erroneous response as being many standard deviations from the mean value of age.
 
 ## Metadata
 
 What additional information does one need to make sense of your data? How can it be used effectively?
 
 ### Advice
+
+1. Along with the original data, store the original survey/data collection instrument and a code book/data dictionary that explains what each variable and value mean.
 
 ### Resources
 
@@ -110,6 +138,8 @@ Does the layout of your data permit easy analysis? Sometimes the transformation 
 ### Advice
 
 1. Often, storing related data in separate tables and joining them when necessary works better than storing one big table with many rows of duplicate information. How can you find a tool that supports easy data joining?
+1. A "long" dataset is usually easier for analysis than a "wide" dataset. Example: If you are measuring the height of 3 trees once every month for a year, a "long" dataset would be one row per measurement with columns for "tree", "month", and "height"; a "wide" dataset would be one row per tree with columns for "tree" and each month of the year with each height stored in the column for its associated month.
+
 
 Data quality and missing data
 
@@ -121,7 +151,18 @@ Do the visualizations communicate in a way that facilitates decisions?
 
 ### Advice
 
-1. 
+Graphs
+1. Every graph/figure should have a clearly-stated purpose / salient observation as its title.
+1. Only use "ink" (text/numbers/markings/colors/etc.) that supports that main point/observation. Remove everything else. Examples:
+    1. On a bar graph, use either data labels on each bar OR use the gridlines across the graph.
+    1. Keep everything on graph in greyscale; use color only for the specific points of data you want to emphasize.
+1. Start all scales at zero. Always.
+1. Use the appropriate type of graph/visualization for your data and for your audience. See resources below for guidance.
+
+Accessibility
+1. Get trained by the CPPR Design Team.
+1. Think about accessibility for every image, for every report.
+
 
 ### Resources
 
@@ -157,7 +198,8 @@ Do the visualizations communicate in a way that facilitates decisions?
 
 Will anyone else be able to carry out your analysis in your absence? Will you be able to carry out your own analysis again in 3 months? 3 years?
 
-“non-reproducible single occurrences are of no significance to science” - Karl Popper
+“Non-reproducible single occurrences are of no significance to science” - Karl Popper
+
 Can your public results be followed so that some other institutions can perform the same analysis?
 
 
