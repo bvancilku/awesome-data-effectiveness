@@ -79,6 +79,8 @@ What additional information does one need to make sense of your data? How can it
 
 ### Advice
 
+1. Along with the original data, store the original survey/data collection instrument and a code book/data dictionary that explains what each variable and value mean.
+
 ### Resources
 
 ## Storage and data quality (Discussion)
@@ -125,6 +127,8 @@ Does the layout of your data permit easy analysis? Sometimes the transformation 
 ### Advice
 
 1. Often, storing related data in separate tables and joining them when necessary works better than storing one big table with many rows of duplicate information. How can you find a tool that supports easy data joining?
+1. A "long" dataset is usually easier for analysis than a "wide" dataset. Example: If you are measuring the height of 3 trees once every month for a year, a "long" dataset would be one row per measurement with columns for "tree", "month", and "height"; a "wide" dataset would be one row per tree with columns for "tree" and each month of the year with each height stored in the column for its associated month.
+
 
 Data quality and missing data
 
@@ -136,7 +140,18 @@ Do the visualizations communicate in a way that facilitates decisions?
 
 ### Advice
 
-1. 
+Graphs
+1. Every graph/figure should have a clearly-stated purpose / salient observation as its title.
+1. Only use "ink" (text/numbers/markings/colors/etc.) that supports that main point/observation. Remove everything else. Examples:
+    1. On a bar graph, use either data labels on each bar OR use the gridlines across the graph.
+    1. Keep everything on graph in greyscale; use color only for the specific points of data you want to emphasize.
+1. Start all scales at zero. Always.
+1. Use the appropriate type of graph/visualization for your data and for your audience. See resources below for guidance.
+
+Accessibility
+1. Get trained by the CPPR Design Team.
+1. Think about accessibility for every image, for every report.
+
 
 ### Resources
 
@@ -172,7 +187,8 @@ Do the visualizations communicate in a way that facilitates decisions?
 
 Will anyone else be able to carry out your analysis in your absence? Will you be able to carry out your own analysis again in 3 months? 3 years?
 
-“non-reproducible single occurrences are of no significance to science” - Karl Popper
+“Non-reproducible single occurrences are of no significance to science” - Karl Popper
+
 Can your public results be followed so that some other institutions can perform the same analysis?
 
 
