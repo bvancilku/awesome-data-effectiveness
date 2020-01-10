@@ -29,7 +29,9 @@ Below is an outline of the 'scientific method', the approach that should be take
 	1. Does your hypothesis align with results, or are results more consistent with the NULL hypothesis?
 	1. Significance is only relevant with regard to the NULL hypothesis
 	1. Attempt to quantify the uncertainty within the claimed results
-1. Consider adopting an iterative process model for data projects.
+
+* Consider adopting an iterative process model for data projects.
+* It's advised to use a project manangement tool (see resources below)
 
 ### Resources
 
@@ -79,7 +81,7 @@ How can you design data collection to align with your purpose and ease analysis?
 * [Starting point for data cleaning and validation](https://towardsdatascience.com/the-ultimate-guide-to-data-cleaning-3969843991d4)
 
 
-## Data storage and quality (Discussion)
+## Data management (Discussion)
 
 Does the storage of your data permit its best use?
 
@@ -108,7 +110,7 @@ Does the layout of your data permit easy analysis? Sometimes the transformation 
     1. Keep track of changes made to the original data so your efforts can be reproduced. See Section "Reproducibility" below.
     1. Take a look at the handout provided by Brandon Bretl
     
-### Data Organization    
+### Data Structure    
 1. Consider the way you structure your data
 	1. Often, storing related data in separate tables and joining them when necessary works better than storing one big table with many rows of duplicate information. How can you find a tool that supports easy data joining?
 	1. A "long" dataset is usually easier for analysis than a "wide" dataset. Example: If you are measuring the height of 3 trees once every month for a year, a "long" dataset would be one row per measurement with columns for "tree", "month", and "height"; a "wide" dataset would be one row per tree with columns for "tree" and each month of the year with each height stored in the column for its associated month.
@@ -156,19 +158,6 @@ Depending on the software tools used for analysis, there are multiple available 
   * [Qualities of 'good' data, and problems caused with 'bad' data'](https://www.grow.com/blog/the-cost-of-poor-data-quality-and-how-to-avoid-it)
   * [Monetary focused costs of 'bad' data](https://www.habiledata.com/blog/5-data-entry-errors-companies-should-avoid-to-improve-accuracy/)
 
-## Transformation
-
-Does the layout of your data permit easy analysis? Sometimes the transformation of the data will depend on the specific purpose. Can your data be transformed readily?
-
-### Advice
-
-1. Often, storing related data in separate tables and joining them when necessary works better than storing one big table with many rows of duplicate information. How can you find a tool that supports easy data joining?
-1. A "long" dataset is usually easier for analysis than a "wide" dataset. Example: If you are measuring the height of 3 trees once every month for a year, a "long" dataset would be one row per measurement with columns for "tree", "month", and "height"; a "wide" dataset would be one row per tree with columns for "tree" and each month of the year with each height stored in the column for its associated month.
-
-
-Data quality and missing data
-
-### Resources
 
 ## Communication and visualization (Discussion)
 
