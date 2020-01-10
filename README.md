@@ -10,18 +10,23 @@ Welcome to a world in which other data professionals care about improving practi
 
 ## Purpose and planning (Discuss)
 
-Why are your collecting the data? What decisions do you want to make based on the data?
+Why are your collecting the data? What decisions do you want to make based on the data? It's best practice to define a question and search for solutions, as opposed to being given a large set of data to explore for intersting queries.
 
 ### Advice
+Below is an outline of the 'scientific method', the approach that should be taken when testing a theory.
 1. Think about a question you're intersted in, try and frame this as best as you can about the intended outcomes and impacts.
 1. Formulate a clear hypothesis
 	1. This is the one question you want to address with your data, anything else is gravy (or to be reformulated into a new hypothesis).
+	1. Understand what the NULL hypothesis means, that's the state of affairs if your predicted hypothesis is not true. 
 1. Predict an outcome
 	1. This step is important, all statistical results can do is give you an 'idea' of how true or false your prediction is. They do not provide an absolute truth.
 	1. Try and distinguish what you're looking for from other possible influences (and corresponding data models). To expand, if there are two hypotheses with the same predictions, then observing that prediction will validate both hypotheses.	
 1. Test your hypothesis
 	1. You may already have the data! (If not, you'll need to collect the data - and this beyond the scope of this document).
-1. analysis...
+	1. Apply and tune the relevant fitting procedure or machine learning algorithm.
+1. Analysis
+	1. Does your hypothesis align with results, or are results more consistent with the NULL hypothesis?
+	1. Significance is only relevant with regard to the NULL hypothesis
 	
 
 ### Resources
