@@ -9,7 +9,7 @@ Welcome to a world in which other data professionals care about improving practi
 
 * [Poster from 2019-01-10 presentation](poster/awesome-data-effectiveness-poster.pdf)
 
-## Project management (Discuss)
+## Project management
 
 Why are your collecting the data? What decisions do you want to make based on the data? It's best practice to define a question and search for solutions, as opposed to being given a large set of data to explore for intersting queries.
 
@@ -60,7 +60,7 @@ What additional information does one need to make sense of your data? How can it
 
 
 
-## Collection
+## Data collection
 
 How can you design data collection to align with your purpose and ease analysis?
 
