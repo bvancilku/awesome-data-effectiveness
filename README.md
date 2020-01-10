@@ -81,7 +81,7 @@ How can you design data collection to align with your purpose and ease analysis?
 * [Starting point for data cleaning and validation](https://towardsdatascience.com/the-ultimate-guide-to-data-cleaning-3969843991d4)
 
 
-## Data management (Discussion)
+## Data management
 
 Does the storage of your data permit its best use?
 
@@ -159,7 +159,7 @@ Depending on the software tools used for analysis, there are multiple available 
   * [Monetary focused costs of 'bad' data](https://www.habiledata.com/blog/5-data-entry-errors-companies-should-avoid-to-improve-accuracy/)
 
 
-## Communication and visualization (Discussion)
+## Communication and visualization
 
 Do the visualizations communicate in a way that facilitates decisions?
 
@@ -202,7 +202,7 @@ Accessibility
 
 
 
-## Reproducibility (Discussion)
+## Reproducibility
 
 Will anyone else be able to carry out your analysis in your absence? Will you be able to carry out your own analysis again in 3 months? 3 years?
 
