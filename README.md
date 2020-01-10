@@ -37,6 +37,10 @@ Below is an outline of the 'scientific method', the approach that should be take
 * It's advised to use a project manangement tool (see resources below).
 * Incorporate feedback mechanisms to improve data and models.
 
+### Metadata
+What additional information does one need to make sense of your data? How can it be used effectively?
+
+* Along with the original data, store the original survey/data collection instrument and a code book/data dictionary that explains what each variable and value mean.
 
 ### Resources
 
@@ -54,15 +58,6 @@ Below is an outline of the 'scientific method', the approach that should be take
 * [Synopsis of scientific method](https://www.thoughtco.com/steps-of-the-scientific-method-p2-606045)
 
 
-## Metadata
-
-What additional information does one need to make sense of your data? How can it be used effectively?
-
-### Advice
-
-1. Along with the original data, store the original survey/data collection instrument and a code book/data dictionary that explains what each variable and value mean.
-
-### Resources
 
 
 ## Collection
