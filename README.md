@@ -16,6 +16,7 @@ Why are your collecting the data? What decisions do you want to make based on th
 Have you designed systems so that errors in data are noted and can inform future practice?
 
 ### Advice
+
 Below is an outline of the 'scientific method', the approach that should be taken when testing a theory.
 1. Think about a question you're intersted in, try and frame this as best as you can about the intended outcomes and impacts.
 1. Formulate a clear hypothesis
@@ -38,6 +39,7 @@ Below is an outline of the 'scientific method', the approach that should be take
 * Incorporate feedback mechanisms to improve data and models.
 
 ### Metadata
+
 What additional information does one need to make sense of your data? How can it be used effectively?
 
 * Along with the original data, store the original survey/data collection instrument and a code book/data dictionary that explains what each variable and value mean.
@@ -74,12 +76,7 @@ How can you design data collection to align with your purpose and ease analysis?
 
 ### Resources
 
-* Data Stories podcast about how to design survey questions (BV enter)
-
-
-### Resources
 * [Starting point for data cleaning and validation](https://towardsdatascience.com/the-ultimate-guide-to-data-cleaning-3969843991d4)
-
 
 ## Data management
 
@@ -88,6 +85,7 @@ Does the storage of your data permit its best use?
 Does the layout of your data permit easy analysis? Sometimes the transformation of the data will depend on the specific purpose. Can your data be transformed readily?
 
 ### Spreadsheet advice
+
 1. Use spreadsheets effectively. See Broman & Woo, 2018.
     1. Use the correct format and data types (e.g. dates should use ISO 8601 standard, are the numbers integers or floating point numbers) for each variable. If you don't know about data types, ask.
     1. Never merge cells.
@@ -99,24 +97,28 @@ Does the layout of your data permit easy analysis? Sometimes the transformation 
     1. If opening a CSV with special characters as an Excel spreadsheet, import the text rather than opening the file to preserve text encoding. If you don't know what this means, ask.
     1. Learn about tidy data shapes.
     
-### Data security    
+### Data security
+
 1. Think about data security. Does your data include PHI, PII, or other sensitive elements? Talk to your IT team.
 
 
 ### File Organization
+
 1. File Organization / Data Flow Management
     1. Especially for reports that will happen again, clearly organize and label all files and folders. One way is to use prefixes in front of the names and folders to keep them in a logical order (e.g. "01 original data", "02 edited data", "03 final report").
     1. Never edit the original data: keep a the original data clearly marked in one location, and make a copy of the original data to be edited.
     1. Keep track of changes made to the original data so your efforts can be reproduced. See Section "Reproducibility" below.
     1. Take a look at the handout provided by Brandon Bretl
     
-### Data Structure    
+### Data Structure
+
 1. Consider the way you structure your data
 	1. Often, storing related data in separate tables and joining them when necessary works better than storing one big table with many rows of duplicate information. How can you find a tool that supports easy data joining?
 	1. A "long" dataset is usually easier for analysis than a "wide" dataset. Example: If you are measuring the height of 3 trees once every month for a year, a "long" dataset would be one row per measurement with columns for "tree", "month", and "height"; a "wide" dataset would be one row per tree with columns for "tree" and each month of the year with each height stored in the column for its associated month.
 
 
 ### Data types
+
 If you don't know about data types, ask!
 Depending on the software tools used for analysis, there are multiple available data types. For the most part these tend to be divided into:
 1. Numerical values
@@ -177,7 +179,6 @@ Accessibility
 1. Get trained by the CPPR Design Team.
 1. Think about accessibility for every image, for every report.
 
-
 ### Resources
 
 * Books
@@ -190,6 +191,8 @@ Accessibility
 * People to follow
     * [Ann K. Emery](https://depictdatastudio.com/) [@evergreendata on Twitter](https://twitter.com/evergreendata)
     * [Stephanie Evergreen](https://stephanieevergreen.com/) [@AnnKEmery on Twitter](https://twitter.com/AnnKEmery)
+* Podcasts
+    * [Data Stories](https://datastori.es/)
 * Processes
     * [The Dashboard Sketch Process](https://stephanieevergreen.com/the-dashboard-sketch-process/)
 * Visualization help
@@ -200,8 +203,6 @@ Accessibility
             * <https://github.com/rafaelbailo/betterposter-latex-template>
             * <https://github.com/LanaSina/better_poster_latex>
 
-
-
 ## Reproducibility
 
 Will anyone else be able to carry out your analysis in your absence? Will you be able to carry out your own analysis again in 3 months? 3 years?
@@ -210,7 +211,6 @@ Will anyone else be able to carry out your analysis in your absence? Will you be
 
 Can your public results be followed so that some other institutions can perform the same analysis?
 
-
 ### Advice
 
 1. Document your work as you go! 
@@ -218,7 +218,6 @@ Can your public results be followed so that some other institutions can perform 
 	1. Refrain from using too many acronyms and buzzwords that are difficult for others to follow.
 1. Never edit the original data: keep a the original data clearly marked in one location, and make a copy of the original data to be edited.
 1. Keep track of changes made to the original data so your efforts can be reproduced. For example, use code/syntax and/or keep detailed notes. If editing data in Excel, you can create a copy of the tab/sheet after each major set of changes to the data -- you would end of with lots of little tabs acting like "save points".
-
 
 ### Resources
 
