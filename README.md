@@ -6,11 +6,14 @@ Do you struggle with analyzing and communicating data to effect the changes you 
 
 Welcome to a world in which other data professionals care about improving practice as much as you do! We invite you to join in a conversation and collective data collection experience about which data practices aid in maximizing effectiveness. _¡Vivan los datos efectivos!_
 
+
 * [Poster from 2019-01-10 presentation](poster/awesome-data-effectiveness-poster.pdf)
 
 ## Project management (Discuss)
 
 Why are your collecting the data? What decisions do you want to make based on the data? It's best practice to define a question and search for solutions, as opposed to being given a large set of data to explore for intersting queries.
+
+Have you designed systems so that errors in data are noted and can inform future practice?
 
 ### Advice
 Below is an outline of the 'scientific method', the approach that should be taken when testing a theory.
@@ -31,7 +34,9 @@ Below is an outline of the 'scientific method', the approach that should be take
 	1. Attempt to quantify the uncertainty within the claimed results
 
 * Consider adopting an iterative process model for data projects.
-* It's advised to use a project manangement tool (see resources below)
+* It's advised to use a project manangement tool (see resources below).
+* Incorporate feedback mechanisms to improve data and models.
+
 
 ### Resources
 
@@ -200,13 +205,7 @@ Accessibility
             * <https://github.com/rafaelbailo/betterposter-latex-template>
             * <https://github.com/LanaSina/better_poster_latex>
 
-## Feedback
 
-### Advice
-
-1. Have you designed systems so that errors in data are noted and can inform future practice?
-
-### Resources
 
 ## Reproducibility (Discussion)
 
