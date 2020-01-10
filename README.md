@@ -35,6 +35,18 @@ Below is an outline of the 'scientific method', the approach that should be take
 
 * [Synopsis of scientific method](https://www.thoughtco.com/steps-of-the-scientific-method-p2-606045)
 
+
+## Metadata
+
+What additional information does one need to make sense of your data? How can it be used effectively?
+
+### Advice
+
+1. Along with the original data, store the original survey/data collection instrument and a code book/data dictionary that explains what each variable and value mean.
+
+### Resources
+
+
 ## Collection
 
 How can you design data collection to align with your purpose and ease analysis?
@@ -51,44 +63,18 @@ How can you design data collection to align with your purpose and ease analysis?
 
 * Data Stories podcast about how to design survey questions (BV enter)
 
-### Data types
-
-Depending on the software tools used for analysis, there are multiple available data types. For the most part these tend to be divided into:
-* Numerical values
-1. To provide more detail, numerical values can represent integers or floating point values. 
-	1. An integer is a whole number, for example 'age in years'. We'd expect to see a response given in a number without decimal places. Take someone who is 35 years old, the response expected is '35'.
-	1. Alternatively, floating points allow decimal places (to some precision). If we're considering a continuous variables, such as a precise value of age, this can be represented in seconds arbitrary precision.
-		1. As an example, a 35 year old may respond to age as 1.104e+9 seconds. Depending on what specific type is used to represent this, and the available computer memory, this could be 1.1045358974e+9 seconds.
-* Strings or text
-	1. This is useful for fields that represent values such as name.
-	1. It's detrmiental to store fields that should be numeric as a string.
-		1. In particular, it's especially irritating if age were represented as string. In this case we could end up with responses along the lines of '35', '35 years', '1.104e+9', making the consolidation of all responses difficult.
-* Boolean values
-	1. Represent values that only have a true or false value. 
-	1. An example could be, 'are you 35 years old, or older?'. Following from our age example, in such a case for a 35 year old we'd store a response of 'true'. Note the explicit representation depends on the programming language used, but regardless it will be one of two possible values.
-	
-
-### Data validation and quality
-
-Defining data types will spot immediate problems with data validation. If someone responds '35 years' to an age field that should be numeric, this will illicit an error as the string 'years' is not interpretable as a numerical value. Such validation (and addressing of said erroneous data) is necessary for any analysis.
-Despite such checks, we can also have responses to an age field such as '45448752'. While this is a numeric value, it is obviously not a valid response to the question of age. This is now a data quality issue. Data quality issues may be difficult to find by glancing at data, but by visulizing the responses we can spot outliers that are non sensical. For example, by plotting the age variable as a histogram (a frequency count of responses), we'd spot an erroneous response as being many standard deviations from the mean value of age.
-
-## Metadata
-
-What additional information does one need to make sense of your data? How can it be used effectively?
-
-### Advice
-
-1. Along with the original data, store the original survey/data collection instrument and a code book/data dictionary that explains what each variable and value mean.
 
 ### Resources
+* [Starting point for data cleaning and validation](https://towardsdatascience.com/the-ultimate-guide-to-data-cleaning-3969843991d4)
 
-## Storage and data quality (Discussion)
+
+## Data storage and quality (Discussion)
 
 Does the storage of your data permit its best use?
 
-### Advice
+Does the layout of your data permit easy analysis? Sometimes the transformation of the data will depend on the specific purpose. Can your data be transformed readily?
 
+### Spreadsheet advice
 1. Use spreadsheets effectively. See Broman & Woo, 2018.
     1. Use the correct format and data types (e.g. dates should use ISO 8601 standard, are the numbers integers or floating point numbers) for each variable. If you don't know about data types, ask.
     1. Never merge cells.
@@ -99,15 +85,54 @@ Does the storage of your data permit its best use?
     1. Keep column (variable) names short and unique with no spaces.
     1. If opening a CSV with special characters as an Excel spreadsheet, import the text rather than opening the file to preserve text encoding. If you don't know what this means, ask.
     1. Learn about tidy data shapes.
+    
+### Data security    
 1. Think about data security. Does your data include PHI, PII, or other sensitive elements? Talk to your IT team.
-1. Data types
-	1. Use the correct format and data types (e.g. dates should use ISO 8601 standard, are the numbers integers or floating point numbers) for each variable. If you don't know about data types, ask.
+
+
+### File Organization
 1. File Organization / Data Flow Management
     1. Especially for reports that will happen again, clearly organize and label all files and folders. One way is to use prefixes in front of the names and folders to keep them in a logical order (e.g. "01 original data", "02 edited data", "03 final report").
     1. Never edit the original data: keep a the original data clearly marked in one location, and make a copy of the original data to be edited.
     1. Keep track of changes made to the original data so your efforts can be reproduced. See Section "Reproducibility" below.
+    1. Take a look at the handout provided by Brandon Bretl
+    
+### Data Organization    
+1. Consider the way you structure your data
+	1. Often, storing related data in separate tables and joining them when necessary works better than storing one big table with many rows of duplicate information. How can you find a tool that supports easy data joining?
+	1. A "long" dataset is usually easier for analysis than a "wide" dataset. Example: If you are measuring the height of 3 trees once every month for a year, a "long" dataset would be one row per measurement with columns for "tree", "month", and "height"; a "wide" dataset would be one row per tree with columns for "tree" and each month of the year with each height stored in the column for its associated month.
 
-https://www.grow.com/blog/the-cost-of-poor-data-quality-and-how-to-avoid-it
+
+### Data types
+If you don't know about data types, ask!
+Depending on the software tools used for analysis, there are multiple available data types. For the most part these tend to be divided into:
+1. Numerical values
+1. To provide more detail, numerical values can represent integers or floating point values. 
+	1. An integer is a whole number, for example 'age in years'. We'd expect to see a response given in a number without decimal places. Take someone who is 35 years old, the response expected is '35'.
+	1. Alternatively, floating points allow decimal places (to some precision). If we're considering a continuous variables, such as a precise value of age, this can be represented in seconds arbitrary precision.
+		1. As an example, a 35 year old may respond to age as 1.104e+9 seconds. Depending on what specific type is used to represent this, and the available computer memory, this could be 1.1045358974e+9 seconds.
+1. Strings or text
+	1. This is useful for fields that represent values such as name.
+	1. It's detrmiental to store fields that should be numeric as a string.
+		1. In particular, it's especially irritating if age were represented as string. In this case we could end up with responses along the lines of '35', '35 years', '1.104e+9', making the consolidation of all responses difficult.
+1. Boolean values
+	1. Represent values that only have a true or false value. 
+	1. An example could be, 'are you 35 years old, or older?'. Following from our age example, in such a case for a 35 year old we'd store a response of 'true'. Note the explicit representation depends on the programming language used, but regardless it will be one of two possible values.
+1. Date formats
+	1. Dates can be stored in multiple methods - usually depending on your country of origin.
+	1. Dates should use ISO 8601 standard.
+
+### Data validation and quality
+
+* Defining data types will spot immediate problems with data validation. If someone responds '35 years' to an age field that should be numeric, this will illicit an error as the string 'years' is not interpretable as a numerical value. Such validation (and addressing of said erroneous data) is necessary for any analysis.
+* Despite such checks, we can also have responses to an age field such as '45448752'. While this is a numeric value, it is obviously not a valid response to the question of age. This is now a data quality issue. Data quality issues may be difficult to find by glancing at data, but by visulizing the responses we can spot outliers that are non sensical. For example, by plotting the age variable as a histogram (a frequency count of responses), we'd spot an erroneous response as being many standard deviations from the mean value of age.
+
+### NULL values
+
+* A NULL value is a blank/missing value. Depending on your analysis, you may represent this in different ways.
+* There also should be consideration to no-response given in field. Don't store such values as -9 if you intend to sum all rows.
+
+
 ### Resources
 
 * Broman, K. W., & Woo, K. H. (2018). Data Organization in Spreadsheets. The American Statistician, 72(1), 2–10. https://doi.org/10.1080/00031305.2017.1375989
