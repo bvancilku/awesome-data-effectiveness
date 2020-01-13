@@ -183,6 +183,7 @@ Accessibility
 
 * Books
     * [Data Visualization: A practical introduction by Kieran Healy](https://socviz.co/)
+    * [Data at Work: Best practices for creating effective charts and information graphics in Microsoft Excel](http://www.dataatworkbook.com/)
 * Chart choosers
     * [Qualitative Chart Chooser 3.0 by Jennier Lyons and Stephanie Evergreen](https://stephanieevergreen.com/qualitative-chart-chooser-3/)
 * Checklists and frameworks
@@ -230,3 +231,4 @@ Can your public results be followed so that some other institutions can perform 
 
 * [Drake](https://github.com/ropensci/drake) is a build system in R for data science projects. It ensures that you only have to run the steps that changed.
 * [renv](https://rstudio.github.io/renv/) provides local reproducible package environments for R similar to those that exist in other languages. Ensure that your colleagues or future you will be running the same versions of all your packages!
+* [psyTeachR](https://psyteachr.github.io/) contains materials for teaching psychology majors about reproducibility.
